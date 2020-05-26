@@ -38,7 +38,7 @@ infect_path = infect_path.sort_values(by=['confirmed'], ascending=False)
 fig = px.pie(case3, values='confirmed', names= case3.index,
                  title='주요 감염경로')
 fig.update_traces(textposition='inside', textinfo='percent+label')
-#fig.show()
+fig.show()
 
 age20 = time_age['age'] == '20s' 
 age30 = time_age['age'] == '30s' 
